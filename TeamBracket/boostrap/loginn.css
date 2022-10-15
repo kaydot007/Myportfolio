@@ -1,0 +1,409 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: brown;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+nav header img {
+    width: 170px;
+}
+
+nav ul li {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+nav ul li button {
+    border: none;
+    padding: 10px 20px;
+    border: 1.5px solid yellow;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+}
+
+nav ul li button:hover {
+    color: rgb(41, 41, 166);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active,
+nav ul li a:hover,
+span {
+    color: yellow;
+}
+
+.top {
+    justify-content: center;
+    display: flex;
+    background-color: rgb(205, 205, 198);
+    height: 85vh;
+}
+
+.container {
+    margin-top: 70px;
+    background-color: white;
+    justify-self: center;
+    width: 45%;
+    box-shadow: 2px 2px 5px black;
+    height: 60vh;
+}
+
+.container .go {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.log {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.log input {
+    width: 18vw;
+    height: 5vh;
+    border-radius: 5px;
+    border-style: ridge;
+    border-color: whitesmoke;
+}
+
+
+.log input:hover {
+    border-color: blue;
+}
+
+.log .me {
+    margin-right: 20px;
+}
+
+.other p {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.other a {
+    text-decoration: none;
+    color: orange;
+}
+
+.other button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 2px;
+    background-color: gold;
+    border: none;
+    align-self: center;
+
+}
+
+footer {
+    display: flex;
+    background-color: rgb(79, 72, 127);
+    margin: auto;
+    height: 68vh;
+    justify-content: space-evenly;
+}
+
+.foot {
+    margin-top: 70px;
+    display: flex;
+    background-color: rgb(79, 72, 127);
+    color: white;
+}
+
+.us {
+    margin-left: 80px;
+}
+
+.table {
+    margin-left: 40px;
+}
+
+.contact {
+    margin-left: 110px;
+}
+
+.copy {
+    text-align: center;
+    background-color: black;
+    color: rgb(61, 59, 59);
+    justify-content: center;
+    padding: 15px 10px;
+    padding-top: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width:1280px) {
+    nav ul {
+        display: none;
+
+    }
+
+    nav {
+        width: 97vw;
+    }
+
+    /* Top section */
+    .container {
+        width: 70vw;
+        height: 70vh;
+        text-align: center;
+
+
+    }
+
+    .top {
+        width: 100vw;
+        height: 85vh;
+    }
+
+    .log {
+        justify-content: center;
+        display: inline;
+    }
+
+    .log input {
+        padding: 0px 50px;
+    }
+
+    /* Footer */
+    footer,
+    .foot {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    footer div {
+        margin-left: 20px !important;
+    }
+
+    .copy {
+
+        width: 98.5vw;
+    }
+
+    footer {
+        width: 100vw !important;
+        margin: 0;
+        padding: 0;
+    }
+
+
+}
+/* Responsive */
+@media screen and (max-width:1200px){
+    nav {
+        width: 96vw;
+    }
+    .copy {
+
+        width: 98vw;
+    }
+
+}
+/* Responsive */
+@media screen and (max-width:960px) {
+    nav ul {
+        display: none;
+
+    }
+
+    nav {
+        width: 95vw;
+    }
+
+    /* Top section */
+    .container {
+        width: 70vw;
+        height: 55vh;
+        text-align: center;
+
+
+    }
+
+    .top {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .log {
+        justify-content: center;
+        display: inline;
+    }
+
+    .log input {
+        padding: 0px 50px;
+    }
+
+    /* Footer */
+    footer,
+    .foot {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    footer div {
+        margin-left: 20px !important;
+    }
+
+    .copy {
+
+        width: 97vw;
+    }
+
+    footer {
+        width: 99.5vw !important;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+    /* Responsive */
+    @media screen and (max-width:780px) {
+        nav ul {
+            display: none;
+
+        }
+
+        nav {
+            width: 95vw;
+        }
+
+        .top {
+            width: 100vw;
+            height: 80vh;
+        }
+
+        /* Top section */
+        .container {
+            width: 70vw;
+            height: 65vh;
+            text-align: center;
+
+
+        }
+
+        /* Footer */
+        footer,
+        .foot {
+            flex-direction: column;
+            height: auto;
+
+        }
+
+        footer div {
+            margin-left: 20px !important;
+        }
+
+        .copy {
+
+            width: 97.5vw;
+        }
+
+        footer {
+            width: 100vw !important;
+            margin: 0;
+            padding: 0;
+        }
+    }
+     /* Responsive */
+     @media screen and (max-width:540px){
+
+       
+        .top {
+            width: 101vw;
+        }
+        footer{
+            width: 101vw !important;
+        }
+    }
+
+    /* Responsive */
+    @media screen and (max-width:500px) {
+        nav ul {
+            display: none;
+
+        }
+
+        nav {
+            width: 90.5vw;
+        }
+
+        .top {
+            width: 101vw;
+            height: 80vh;
+        }
+
+        /* Top section */
+        .container {
+            width: 70vw;
+            height: 65vh;
+            text-align: center;
+
+
+        }
+
+        /* Footer */
+        footer,
+        .foot {
+            flex-direction: column;
+            height: auto;
+
+        }
+
+        footer div {
+            margin-left: 20px !important;
+        }
+
+
+
+        footer {
+            width: 101vw !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .copy {
+
+            width: 95.5vw;
+        }
+
+    }
+
+    /* Responsive */
+    @media screen and (max-width:300px) {
+        nav {
+            width: 87vw;
+        }
+        .copy {
+
+            width: 94vw;
+        }
+        .container{
+            height: 68vh;
+        }
+    }
+    
